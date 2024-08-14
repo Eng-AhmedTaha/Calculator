@@ -1,0 +1,89 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Calulator</title>
+   <style>
+     
+     
+          .RowDiv
+        {
+            margin-bottom:10px;
+        }  
+
+        .CalCutton{
+               width: 100px;
+               height: 70px;
+             background-color: rgb(165, 165, 248);
+      }
+
+      .InputText{
+         width: 300px;
+            height: 30px;
+      }
+    .OperCutton{
+      width: 74px;
+      height: 70px;
+      background-color: antiquewhite;
+    }
+    .EqualCutton{
+      width: 300px;
+      height: 70px;
+      background-color: dimgray;
+    }
+
+   </style>
+</head>
+<body>
+   <form>
+      <div style="width: 48%;float: left;">
+
+      <div class="RowDiv" >
+         <input   id="txtInput"       class="InputText" type="text"/>
+ <button type="button" class="ClearCutton" onclick="clearInput()">Clear</button>
+
+      </div>
+      <div class="RowDiv">
+         <button class="CalCutton"  id="nine"  type="button" onclick="writeText(this)">9</button>
+         <button class="CalCutton" id="eight"  type="button" onclick="writeText(this)" >8</button>
+         <button class="CalCutton" id="seven"   type="button" onclick="writeText(this)">7</button>
+
+      </div>
+      <div class="RowDiv">
+         <button class="CalCutton" id ="four"  type="button" onclick="writeText(this)">4</button>
+         <button class="CalCutton"  id = "five"   type="button" onclick="writeText(this)">5</button>
+         <button class="CalCutton"  id ="six"   type="button" onclick="writeText(this)">6</button>
+
+      </div>
+      <div class="RowDiv">
+         <button class="CalCutton"  type="button" id ="one" onclick="writeText(this)">1</button>
+         <button class="CalCutton"  type="button" id ="two" onclick="writeText(this)">2</button>
+         <button class="CalCutton"  type="button" id ="three " onclick="writeText(this)">3</button>
+
+      </div>
+      <div class="RowDiv">
+         <button class="OperCutton"  type="button" onclick="opertorClick(this)">+</button>
+         <button class="OperCutton"  type="button" onclick="opertorClick(this)">-</button>
+         <button class="OperCutton"  type="button" onclick="opertorClick(this)">*</button>
+         <button class="OperCutton"  type="button" onclick="opertorClick(this)">/</button>
+
+      </div>
+      <div class="RowDiv">
+         <button  class="EqualCutton" type="button" onclick="calculate()" >=</button>
+      </div>
+
+      
+   </div>
+   <div style="width: 48%;float: left;">
+      <ul id="DivValues">
+          
+      </ul>
+  </div>
+   </form>
+<script src="index.js">
+
+</script>
+</body>
+</html>
